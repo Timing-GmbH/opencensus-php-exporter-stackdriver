@@ -143,7 +143,7 @@ class SpanConverter
         ]);
     }
 
-    private static function convertStatus(OCStatus $status = null)
+    private static function convertStatus(?OCStatus $status = null)
     {
         if ($status) {
             return new Status($status->code(), $status->message());
